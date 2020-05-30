@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<title>ch10-2-1使用translate平移區塊</title>
+<meta charset="utf-8">
+<style>
+    div{
+        width:150px;
+        height:100px;
+        background-color:orange;
+        border:1px blue dashed;
+        margin:100px 0;
+    }
+    .trans1{
+        -ms-transform:translate(25px,50px);
+        -webkit-transform:translate(25px,50px);
+        transform:translate(25px,50px)
+    }
+</style>
+</head>
+<body>
+    <p>因CSS尚未標準化,需在transform前加入</p>
+    <p>-ms 用於internetExporer</p>
+    <p>-webkit 用於Chrome safari</p>
+
+    <h1>transform: translate(水平平移距離,垂直平移距離);</h1>
+    <div>沒有平移</div>
+    <div class="trans1">transform: translate(25px,50px)平移區塊</div>
+</body>
+</html>
